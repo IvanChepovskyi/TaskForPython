@@ -10,8 +10,18 @@ def myPrintPos(fl):
     return 'ln('+str(fl)+')= '+str(math.log(fl))
 def myPrintNeg(fl):
     return 'ln('+str(fl)+') is illegal'
-for r in sys.argv[1:]:
-    rfl=readConsole(r)
+
+# first cycle
+#for r in sys.argv[1:]:
+#    rfl=readConsole(r)
+#    if (posOrneg(rfl)==True):
+#        print (myPrintPos(rfl))
+#    else:
+#        print(myPrintNeg(rfl))
+
+#second cycle
+for i in range(1,len(sys.argv)):
+    rfl=readConsole(sys.argv[i])
     if (posOrneg(rfl)==True):
         print (myPrintPos(rfl))
     else:
