@@ -6,5 +6,5 @@ def compute (n):
         s += random.random()
         i += 1
     return s/n
-n = sys.argv [1]
-print ("average of","%u" % (n), "random numbers is ","%g" % compute (n))
+n = int(sys.argv [1],10)
+print ("average of",n, "random numbers is ","%g" % compute (n))
