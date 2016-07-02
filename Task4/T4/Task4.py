@@ -28,11 +28,25 @@ def myPrintNeg(fl):
 #        print(myPrintNeg(rfl))
 
 #third cycle
+#i=1
+#while i<len(sys.argv):
+#    rfl=readConsole(sys.argv[i])
+#    if (posOrneg(rfl)==True):
+#        print (myPrintPos(rfl))
+#    else:
+#        print(myPrintNeg(rfl))
+#    i=i+1
+
+#Fourth cycle
 i=1
-while i<len(sys.argv):
-    rfl=readConsole(sys.argv[i])
-    if (posOrneg(rfl)==True):
-        print (myPrintPos(rfl))
-    else:
-        print(myPrintNeg(rfl))
-    i=i+1
+while 1:
+    try:
+        rfl=readConsole(sys.argv[i])
+        if (posOrneg(rfl)==True):
+            print (myPrintPos(rfl))
+        else:
+            print(myPrintNeg(rfl))
+        i=i+1
+    except IndexError:
+        break
+        
