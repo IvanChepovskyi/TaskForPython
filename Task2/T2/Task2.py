@@ -1,8 +1,9 @@
+import sys
 from random import uniform
-n=input()
+n=int(sys.argv[1],10)
 i=0
 sum=0.0
-while i!=n:
+while i<n:
     a=uniform(-1,1)
     sum=sum+a
     print ("%.4f" % (a))
