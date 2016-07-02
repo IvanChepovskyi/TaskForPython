@@ -20,9 +20,19 @@ def myPrintNeg(fl):
 #        print(myPrintNeg(rfl))
 
 #second cycle
-for i in range(1,len(sys.argv)):
+#for i in range(1,len(sys.argv)):
+#    rfl=readConsole(sys.argv[i])
+#    if (posOrneg(rfl)==True):
+#        print (myPrintPos(rfl))
+#    else:
+#        print(myPrintNeg(rfl))
+
+#third cycle
+i=1
+while i<len(sys.argv):
     rfl=readConsole(sys.argv[i])
     if (posOrneg(rfl)==True):
         print (myPrintPos(rfl))
     else:
         print(myPrintNeg(rfl))
+    i=i+1
