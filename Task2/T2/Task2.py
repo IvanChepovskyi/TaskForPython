@@ -1,10 +1,5 @@
-#import sys
 from random import uniform
-#if len(sys.argv)>1:
-#    n=sys.argv[1]
-#else:
-#    n=0
-n=10
+n=input()
 i=0
 sum=0.0
 while i!=n:
