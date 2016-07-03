@@ -18,6 +18,8 @@ for line in ifile:
     for i in range(0,len(numbstr)):
         numb.append(float(numbstr[i]))
     middle = myfunc(numb)
-    ofile.write('{} {}'.format(numb,middle))
+    for i in range(0,len(numb)):
+        ofile.write('%12.6f' % (numb[i]))
+    ofile.write('%12.6f\n' % (middle))
 ifile.close()
 ofile.close()
