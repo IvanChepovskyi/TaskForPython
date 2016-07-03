@@ -11,4 +11,10 @@ for i in range(1,n):
         sum=sum+1
 prob=sum/n
 print('probability of 6 = ','%6f' % (prob))
+prob=round(prob,3)
+left=n*prob-1+prob
+right=n*prob+prob
+print('the most probable number of tests = ')
+for i in range(int(left),int(right)):
+    print(i)
 
